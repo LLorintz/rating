@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Star-background: hsl(219, 14%, 24%);
+}   
+
+body{
+    font-family: "Overpass", sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.container{
+    background-color: var(--Dark-Blue);
+    width: 350px;
+    padding:30px;
+    border-radius: 20px;
+}
+
+.starContainer{
+    width: 40px;
+    height: 40px;
+    background-color: var(--Star-background);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius:50%;
+    margin-bottom: 15px;
+}
+
+h1{
+    color: var(--White);
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+p{
+    color: var(--Light-Grey);
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.buttonContainer button{
+    width: 40px;
+    height: 40px;
+    background-color: var(--Star-background);
+    color: var(--Light-Grey);
+    border-radius: 50%;
+    border:none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttonContainer button:hover{
+    background-color: var(--Light-Grey);
+    color: var(--Star-background);
+}
+
+
+.buttonContainer button:focus{
+    background-color: var(--Orange);
+    color: var(--Star-background);
+}
+
+.submit{
+    width: 100%;
+    border-radius: 20px;
+    padding:8px;
+    border: none;
+    background-color: var(--Orange);
+    color: var(--Very-Dark-Blue);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: var(--Light-Grey);
+    color: var(--Star-background);
+}
+
+.thankYou{
+    text-align: center;
+}
+
+.thankYou img{
+    margin-bottom: 15px;
+}
+
+.selectedRate{
+    background-color: var(--Star-background);
+    color: var(--Orange);
+    padding:0.6rem 2rem;
+    display: block;
+    border-radius: 1rem;
+    
+}
+
+.thankYou h1{
+    margin-bottom: 15px;
+}
+
+
+
+
